@@ -43,6 +43,7 @@ So to improve the model, training should have more extended epochs with early st
 
 ## TASK 4
 WEB APP
-![Web app](/images/SS1.png)
 ![Web app](/images/SS2.png)
-[App](/images/Screen Recording.gif)
+
+Demo:
+https://drive.google.com/file/d/1szbn5QV8ISuJUrnjfqChwSbK-ITLuNeg/view?usp=sharing
