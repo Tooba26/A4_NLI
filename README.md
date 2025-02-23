@@ -21,19 +21,28 @@ The training process is divided into increments of 100 epochs, with updates at 2
 
 2) The BookCorpus dataset is a large collection of free books used for training natural language processing (NLP) models. It contains over 11,000 books covering various genres and topics, making it a valuable resource for language modeling, text generation, and pretraining transformer-based models such as BERT and GPT. In the code, only the first 1% of the training split is loaded using the Hugging Face Datasets library.
 
-3)
+3) Saved model as bert_model.pth. 
+Note: Due to large size of model, it cannot be pushed to Github
 
 ## TASK 2
-1)
-2)
-3)
+1) Used snli and mnli dataset from HuggingFace.
+2) Trained the Sentence-BERT
+![S-BERT](/images/S-BERT.png)
+The image shows the training log for Sentence-BERT (S-BERT), where the loss values are recorded for two epochs. In Epoch 1, the loss is 38.16, and by Epoch 2, it significantly drops to 17.57, indicating that the model is learning and improving sentence representations.
+
+For training the model saved in Task 1 was used. Due to architecture there were few changes made in the training loop of S-BERT.
 
 ## TASK 3
-1)
-2)
-3)
+1) 
+| Model Type  | Dataset   | Accuracy | Precision | Recall | F1-Score |
+|------------|----------|----------|-----------|--------|----------|
+| Our Model  | Test Data | 0.15     | 0.598571  | 0.15   | 0.058643 |
+
+2) The challenge I encoutered was to implement the saved model weights. Also GPU becomes out of memory so I wasn't able to use some more data and more epochs. 
+So to improve the model, training should have more extended epochs with early stopping, and hyperparameters like learning rate and optimizer settings should be fine-tuned. Using different embedding strategies, such as the [CLS] token instead of mean pooling, may provide better feature representations. Furthermore, unfreezing some BERT layers for fine-tuning can enhance generalization. 
 
 ## TASK 4
-1)
-2)
-3)
+WEB APP
+![Web app](/images/SS1.png)
+![Web app](/images/SS2.png)
+![App](/images/Screen%20Recording.mp4)
