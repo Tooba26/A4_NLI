@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NLI Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, textarea {
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>NLI Prediction (Entailment, Neutral, Contradiction)</h1>
+    
+    <form method="post">
+        <label>Premise:</label><br>
+        <textarea name="premise" rows="3" required></textarea><br>
+        
+        <label>Hypothesis:</label><br>
+        <textarea name="hypothesis" rows="3" required></textarea><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h2>Prediction: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
