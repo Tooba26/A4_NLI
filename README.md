@@ -27,7 +27,7 @@ Note: Due to large size of model, it cannot be pushed to Github
 ## TASK 2
 1) Used snli and mnli dataset from HuggingFace.
 2) Trained the Sentence-BERT
-![S-BERT](/images/S-BERT.png)
+![S-BERT](/images/S_BERT2.png)
 The image shows the training log for Sentence-BERT (S-BERT), where the loss values are recorded for two epochs. In Epoch 1, the loss is 38.16, and by Epoch 2, it significantly drops to 17.57, indicating that the model is learning and improving sentence representations.
 
 For training the model saved in Task 1 was used. Due to architecture there were few changes made in the training loop of S-BERT.
@@ -45,4 +45,4 @@ So to improve the model, training should have more extended epochs with early st
 WEB APP
 ![Web app](/images/SS1.png)
 ![Web app](/images/SS2.png)
-![App](/images/Screen%20Recording.mp4)
+![App](/images/Screen Recording.mp4)
